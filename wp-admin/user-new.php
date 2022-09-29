@@ -511,6 +511,10 @@ if ( current_user_can( 'create_users' ) ) {
 	?>
 <table class="form-table" role="presentation">
 	<tr class="form-field form-required">
+		<th scope="row"><label for="nip">Wyszukaj po nipie <span class="description"><?php _e( '(required)' ); ?></span></label></th>
+		<td><input name="user_login" type="text" id="user_login" value="" aria-required="true" autocapitalize="none" autocorrect="off" autocomplete="off" maxlength="60" /></td>
+	</tr>
+	<tr class="form-field form-required">
 		<th scope="row"><label for="user_login"><?php _e( 'Username' ); ?> <span class="description"><?php _e( '(required)' ); ?></span></label></th>
 		<td><input name="user_login" type="text" id="user_login" value="<?php echo esc_attr( $new_user_login ); ?>" aria-required="true" autocapitalize="none" autocorrect="off" autocomplete="off" maxlength="60" /></td>
 	</tr>
