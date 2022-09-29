@@ -883,7 +883,7 @@ function confirm_delete_users( $users ) {
 	$site_admins = get_super_admins();
 	$admin_out   = '<option value="' . esc_attr( $current_user->ID ) . '">' . $current_user->user_login . '</option>';
 	?>
-	<table class="form-table" role="presentation">
+	<table class="form-table  a" role="presentation">
 	<?php
 	$allusers = (array) $_POST['allusers'];
 	foreach ( $allusers as $user_id ) {

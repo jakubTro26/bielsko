@@ -27991,7 +27991,7 @@ msgstr "Adres wysyłki klienta"
 #: includes/admin/class-wc-admin-profile.php:43
 #: includes/admin/settings/views/settings-tax.php:40
 msgid "Customer billing address"
-msgstr "Adres płatności klientas"
+msgstr "Adres płatności klienta"
 
 #: includes/admin/settings/views/settings-tax.php:47
 msgid "Optionally control which tax class shipping gets, or leave it so shipping tax is based on the cart items themselves."
