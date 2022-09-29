@@ -407,7 +407,7 @@ switch ( $action ) {
 				<h2><?php _e( 'Name' ); ?></h2>
 
 
-				<?php echo $profile_user->user_login;  ?>
+				<?php echo 'kuba'  ?>
 
 
 				<table class="form-table" role="presentation">
