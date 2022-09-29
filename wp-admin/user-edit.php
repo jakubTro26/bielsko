@@ -407,7 +407,7 @@ switch ( $action ) {
 				<h2><?php _e( 'Name' ); ?></h2>
 
 
-				<?php var_dump($profile_user); ?>
+				<?php var_dump($profile_user);  ?>
 
 
 				<table class="form-table" role="presentation">
