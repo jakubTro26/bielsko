@@ -407,7 +407,7 @@ switch ( $action ) {
 				<h2><?php _e( 'Name' ); ?></h2>
 
 				<table class="form-table" role="presentation">
-					<tr class="user-user-login-wrap">
+					<tr class="user-user-login-wrap p">
 						<th><label for="user_login"><?php _e( 'Username' ); ?></label></th>
 						<td><input type="text" name="user_login" id="user_login" value="<?php echo esc_attr( $profile_user->user_login ); ?>" disabled="disabled" class="regular-text" /> <span class="description"><?php _e( 'Usernames cannot be changed.' ); ?></span></td>
 					</tr>
