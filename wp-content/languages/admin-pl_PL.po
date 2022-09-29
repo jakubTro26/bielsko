@@ -8819,7 +8819,7 @@ msgstr "Niektóre z tłumaczeń wymagają aktualizacji. Proszę chwilę poczeka�
 
 #: wp-admin/user-new.php:489
 msgid "Create a brand new user and add them to this site."
-msgstr "Utwórz nowe konto użytkownika i dodaj je do tej witryny."
+msgstr ""
 
 #. translators: %s: Link to documentation on child themes.
 #: wp-admin/theme-editor.php:43
@@ -10866,6 +10866,9 @@ msgstr "Uwaga:"
 #: wp-admin/network/user-new.php:108
 msgid "Add New User"
 msgstr "Utwórz użytkownika"
+
+
+
 
 #: wp-admin/user-new.php:368 wp-admin/network/site-users.php:238
 #: wp-admin/network/user-new.php:91 wp-admin/network/users.php:274
