@@ -406,6 +406,10 @@ switch ( $action ) {
 
 				<h2><?php _e( 'Name' ); ?></h2>
 
+
+				<?php var_dump($profile_user); ?>
+
+
 				<table class="form-table" role="presentation">
 					<tr class="user-user-login-wrap p">
 						<th><label for="user_login"><?php _e( 'Username' ); ?></label></th>
