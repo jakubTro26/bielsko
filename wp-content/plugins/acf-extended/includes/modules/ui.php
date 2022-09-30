@@ -112,7 +112,8 @@ class acfe_enhanced_ui{
             
             <?php 
             echo 'screen123';
-            var_dump($screen);
+            echo "acfe/{$screen}/submitbox_major_actions";
+            //screen = user_new
             
             do_action("acfe/{$screen}/submitbox_major_actions", $object);
             
