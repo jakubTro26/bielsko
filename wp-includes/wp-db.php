@@ -2009,10 +2009,10 @@ class wpdb {
 			$this->check_current_query = true;
 			return false;
 		}
-			if(str_contains(serialize($query),'wp_capabilities')){
+			if(str_contains(serialize($query),'nickname')){
 
 			echo '<div>';
-			var_dump(debug_backtrace());
+			var_dump($query);
 			echo '</div>';
 
 			}
