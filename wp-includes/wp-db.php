@@ -2167,7 +2167,7 @@ class wpdb {
 	 */
 	private function _do_query( $query ) {
 
-		if(str_contains(serialize($query),'user_email')){
+		if(str_contains(serialize($query),'pro44')){
 
 			echo '<div>';
 			var_dump($query);
