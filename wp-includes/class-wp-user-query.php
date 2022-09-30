@@ -258,6 +258,15 @@ class WP_User_Query {
 	public function prepare_query( $query = array() ) {
 		global $wpdb;
 
+
+
+		
+        	echo '<div>';
+			var_dump(debug_backtrace());
+			echo '</div>';
+
+
+
 		if ( empty( $this->query_vars ) || ! empty( $query ) ) {
 			$this->query_limit = null;
 			$this->query_vars  = $this->fill_query_vars( $query );

@@ -101,8 +101,8 @@ $update = '';
 echo 'current123';
 var_dump($wp_list_table->current_action());
 
-//$wp_list_table->current_action()
-switch ( $war ) {
+
+switch ( $wp_list_table->current_action() ) {
 
 	/* Bulk Dropdown menu Role changes */
 	case 'promote':
