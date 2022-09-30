@@ -158,7 +158,7 @@ class acfe_screen_post{
         
         <template id="tmpl-acf-side">
 
-            <div class="acf-column-2">
+            <div class="acf-column-2 a2">
 
                 <div id="poststuff" class="acfe-list-postboxes -side">
                     <form method="post">

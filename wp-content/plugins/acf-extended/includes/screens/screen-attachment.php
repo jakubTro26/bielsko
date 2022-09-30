@@ -149,7 +149,7 @@ class acfe_screen_attachment{
         
         <template id="tmpl-acf-side">
 
-            <div class="acf-column-2">
+            <div class="acf-column-2 a1">
 
                 <div id="poststuff" class="acfe-list-postboxes -side">
                     <form method="post">
