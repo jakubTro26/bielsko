@@ -636,7 +636,7 @@ if ( current_user_can( 'create_users' ) ) {
 
 	<?php
 	/** This action is documented in wp-admin/user-new.php */
-	//do_action( 'user_new_form', 'add-new-user' );
+	do_action( 'user_new_form', 'add-new-user' );
 	?>
 
 	<?php submit_button( __( 'Add New User' ), 'primary', 'createuser', true, array( 'id' => 'createusersub' ) ); ?>
