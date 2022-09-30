@@ -103,10 +103,10 @@ if ( ! function_exists( 'get_user_by' ) ) :
 		global $current_user;
 
 		$userdata = WP_User::get_data_by( $field, $value );
-		if($value==8){
-		echo 'data123';
-		var_dump($userdata);
-		}
+		// if($value==8){
+		// echo 'data123';
+		// var_dump($userdata);
+		// }
 
 		if ( ! $userdata ) {
 			return false;
