@@ -208,12 +208,12 @@ Please click the following link to confirm the invite:
 			die();
 		}
 	} else {
-		// Adding a new user to this site.
-		$new_user_email = wp_unslash( $_REQUEST['email'] );
-		$user_details   = wpmu_validate_user_signup( $_REQUEST['user_login'], $new_user_email );
-		if ( is_wp_error( $user_details['errors'] ) && $user_details['errors']->has_errors() ) {
-			$add_user_errors = $user_details['errors'];
-		} else {
+		// // Adding a new user to this site.
+		// $new_user_email = wp_unslash( $_REQUEST['email'] );
+		// $user_details   = wpmu_validate_user_signup( $_REQUEST['user_login'], $new_user_email );
+		// if ( is_wp_error( $user_details['errors'] ) && $user_details['errors']->has_errors() ) {
+		// 	$add_user_errors = $user_details['errors'];
+		// } else {
 		// 	/** This filter is documented in wp-includes/user.php */
 		// 	$new_user_login = apply_filters( 'pre_user_login', sanitize_user( wp_unslash( $_REQUEST['user_login'] ), true ) );
 		// 	if ( isset( $_POST['noconfirmation'] ) && current_user_can( 'manage_network_users' ) ) {
