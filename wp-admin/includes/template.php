@@ -1328,7 +1328,7 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 					echo '<div id="' . $box['id'] . '" class="postbox ' . postbox_classes( $box['id'], $page ) . $hidden_class . '" ' . '>' . "\n";
 
 					echo '<div class="postbox-header">';
-					echo '<h2 class="hndle">';
+					echo '<h2 class="hndle p">';
 					if ( 'dashboard_php_nag' === $box['id'] ) {
 						echo '<span aria-hidden="true" class="dashicons dashicons-warning"></span>';
 						echo '<span class="screen-reader-text">' . __( 'Warning:' ) . ' </span>';
