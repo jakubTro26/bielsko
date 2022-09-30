@@ -447,6 +447,10 @@ function do_action( $hook_name, ...$arg ) {
 		++$wp_actions[ $hook_name ];
 	}
 
+	if($hook_name=="user_new_form"){
+		var_dump($hook_name);
+	}
+
 	// Do 'all' actions first.
 	if ( isset( $wp_filter['all'] ) ) {
 		$wp_current_filter[] = $hook_name;

@@ -97,9 +97,9 @@ class acfe_enhanced_ui{
     function render_metabox_submit($object, $metabox){
         
 
-        	echo '<div>';
-			var_dump(debug_backtrace());
-			echo '</div>';
+        	// echo '<div>';
+			// var_dump(debug_backtrace());
+			// echo '</div>';
 
         // screen
         $screen = $metabox['args'];
