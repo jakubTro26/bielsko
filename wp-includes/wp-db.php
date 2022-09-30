@@ -2009,14 +2009,7 @@ class wpdb {
 			$this->check_current_query = true;
 			return false;
 		}
-			if(str_contains(serialize($query),'nickname')){
-
-			echo '<div>';
-			var_dump($query);
-			echo '</div>';
-
-			}
-
+			
 			// echo '<div>';
 			// var_dump(debug_backtrace());
 			// echo '</div>';
@@ -2173,6 +2166,18 @@ class wpdb {
 	 * @param string $query The query to run.
 	 */
 	private function _do_query( $query ) {
+
+		if(str_contains(serialize($query),'nickname')){
+
+			echo '<div>';
+			var_dump($query);
+			echo '</div>';
+
+			}
+
+
+
+
 		if ( defined( 'SAVEQUERIES' ) && SAVEQUERIES ) {
 			$this->timer_start();
 		}
