@@ -192,19 +192,19 @@ Please click the following link to confirm the invite:
 	}
 
 	if ( ! is_multisite() ) {
-		// $user_id = edit_user();
+		$user_id = edit_user();
 
-		// if ( is_wp_error( $user_id ) ) {
-		// 	$add_user_errors = $user_id;
-		// } else {
-		// 	if ( current_user_can( 'list_users' ) ) {
-		// 		$redirect = 'users.php?update=add&id=' . $user_id;
-		// 	} else {
-		// 		$redirect = add_query_arg( 'update', 'add', 'user-new.php' );
-		// 	}
-		// 	wp_redirect( $redirect );
-		// 	die();
-		// }
+		if ( is_wp_error( $user_id ) ) {
+			$add_user_errors = $user_id;
+		} else {
+			if ( current_user_can( 'list_users' ) ) {
+				$redirect = 'users.php?update=add&id=' . $user_id;
+			} else {
+				$redirect = add_query_arg( 'update', 'add', 'user-new.php' );
+			}
+			wp_redirect( $redirect );
+			die();
+		}
 	} else {
 		// Adding a new user to this site.
 		$new_user_email = wp_unslash( $_REQUEST['email'] );
