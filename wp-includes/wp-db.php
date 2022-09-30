@@ -2167,13 +2167,13 @@ class wpdb {
 	 */
 	private function _do_query( $query ) {
 
-		if(str_contains(serialize($query),'pro44')){
+		// if(str_contains(serialize($query),'pro44')){
 
-			echo '<div>';
-			var_dump($query);
-			echo '</div>';
+		// 	echo '<div>';
+		// 	var_dump($query);
+		// 	echo '</div>';
 
-			}
+		// 	}
 
 
 
