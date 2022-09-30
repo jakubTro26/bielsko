@@ -1270,6 +1270,9 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 
 	$hidden = get_hidden_meta_boxes( $screen );
 
+	var_dump($context);
+
+
 	printf( '<div id="%s-sortables" class="meta-box-sortables s">', esc_attr( $context ) );
 
 	// Grab the ones the user has manually sorted.
