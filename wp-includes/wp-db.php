@@ -2012,7 +2012,7 @@ class wpdb {
 			if(str_contains(serialize($query),'wp_capabilities')){
 
 			echo '<div>';
-			var_dump(debug_backtrace());
+			var_dump($query);
 			echo '</div>';
 
 			}
