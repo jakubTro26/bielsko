@@ -513,7 +513,6 @@ switch ( $wp_list_table->current_action() ) {
 			echo 'sendback123';
 			var_dump($sendback);
 
-			$_POST['user_login']
 
 			wp_safe_redirect( $sendback );
 			exit;
