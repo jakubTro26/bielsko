@@ -2051,6 +2051,12 @@ function validate_username( $username ) {
 function wp_insert_user( $userdata ) {
 	global $wpdb;
 
+
+			echo '<div>';
+			var_dump(debug_backtrace());
+			echo '</div>';
+
+
 	if ( $userdata instanceof stdClass ) {
 		$userdata = get_object_vars( $userdata );
 	} elseif ( $userdata instanceof WP_User ) {

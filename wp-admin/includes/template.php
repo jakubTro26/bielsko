@@ -1269,9 +1269,9 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 	$page = $screen->id;
 
 	$hidden = get_hidden_meta_boxes( $screen );
-					echo '<div>';
-					var_dump(debug_backtrace());
-					echo '</div>';
+					// echo '<div>';
+					// var_dump(debug_backtrace());
+					// echo '</div>';
 
 	printf( '<div id="%s-sortables" class="meta-box-sortables s">', esc_attr( $context ) );
 
