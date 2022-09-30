@@ -479,10 +479,10 @@ function do_action( $hook_name, ...$arg ) {
 		$arg[0] = $arg[0][0];
 	}
 
-	if($hook_name=="user_new_form"){
-		echo 'wp_filter';
-		var_dump($wp_filter[ $hook_name ]);
-		}
+	// if($hook_name=="user_new_form"){
+	// 	echo 'wp_filter';
+	// 	var_dump($wp_filter[ $hook_name ]);
+	// 	}
 
 
 	$wp_filter[ $hook_name ]->do_action( $arg );

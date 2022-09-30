@@ -1401,9 +1401,9 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 							<?php
 						}
 					}
-					//echo 'callback123';
-					// var_dump($box['callback']);
-					//v123
+					echo 'callback123';
+					var_dump($box['callback']);
+				//	v123
 					call_user_func( $box['callback'], $data_object, $box );
 					echo "</div>\n";
 					echo "</div>\n";
