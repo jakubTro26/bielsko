@@ -455,11 +455,10 @@ function do_action( $hook_name, ...$arg ) {
 		$all_args            = func_get_args(); // phpcs:ignore PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue.NeedsInspection
 		_wp_call_all_hook( $all_args );
 
-		if($hook_name=="user_new_form"){
-		echo 'all_args';
-		var_dump($all_args);
-		}
+	
 	}
+
+
 
 	if ( ! isset( $wp_filter[ $hook_name ] ) ) {
 		if ( isset( $wp_filter['all'] ) ) {
@@ -479,6 +478,12 @@ function do_action( $hook_name, ...$arg ) {
 		// Backward compatibility for PHP4-style passing of `array( &$this )` as action `$arg`.
 		$arg[0] = $arg[0][0];
 	}
+
+	if($hook_name=="user_new_form"){
+		echo 'wp_filter';
+		var_dump($wp_filter[ $hook_name ]);
+		}
+
 
 	$wp_filter[ $hook_name ]->do_action( $arg );
 
