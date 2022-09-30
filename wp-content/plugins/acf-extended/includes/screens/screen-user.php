@@ -189,6 +189,9 @@ class acfe_screen_user{
         
         // enqueue
         acf_enqueue_scripts();
+
+
+
         
         ?>
         <template id="tmpl-acf-after-title">
@@ -230,7 +233,7 @@ class acfe_screen_user{
             // main form
             var $main = $('.wrap > form');
 
-            $main.wrap('<div class="acf-columns-2" />');
+            $main.wrap('<div class="acf-columns-2 rr" />');
             $main.prepend($('.subsubsub'));
             $main.wrap('<div class="acf-column-1" />');
 
