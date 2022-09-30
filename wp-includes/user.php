@@ -2051,7 +2051,7 @@ function validate_username( $username ) {
 function wp_insert_user( $userdata ) {
 	global $wpdb;
 
-
+			echo 'adding123';
 			echo '<div>';
 			var_dump(debug_backtrace());
 			echo '</div>';
