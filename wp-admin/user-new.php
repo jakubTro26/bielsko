@@ -181,33 +181,33 @@ Please click the following link to confirm the invite:
 	wp_redirect( $redirect );
 	die();
 } elseif ( isset( $_REQUEST['action'] ) && 'createuser' === $_REQUEST['action'] ) {
-	check_admin_referer( 'create-user', '_wpnonce_create-user' );
+	// check_admin_referer( 'create-user', '_wpnonce_create-user' );
 
-	if ( ! current_user_can( 'create_users' ) ) {
-		wp_die(
-			'<h1>' . __( 'You need a higher level of permission.' ) . '</h1>' .
-			'<p>' . __( 'Sorry, you are not allowed to create users.' ) . '</p>',
-			403
-		);
-	}
+	// if ( ! current_user_can( 'create_users' ) ) {
+	// 	wp_die(
+	// 		'<h1>' . __( 'You need a higher level of permission.' ) . '</h1>' .
+	// 		'<p>' . __( 'Sorry, you are not allowed to create users.' ) . '</p>',
+	// 		403
+	// 	);
+	// }
 
-	if ( ! is_multisite() ) {
-		$user_id = edit_user();
+	// if ( ! is_multisite() ) {
+	// 	$user_id = edit_user();
 
-		if ( is_wp_error( $user_id ) ) {
-			$add_user_errors = $user_id;
-		} else {
-			if ( current_user_can( 'list_users' ) ) {
-				$redirect = 'users.php?update=add&id=' . $user_id;
-			} else {
-				$redirect = add_query_arg( 'update', 'add', 'user-new.php' );
-			}
-			echo 'redirect123';
-			var_dump($redirect);
-			wp_redirect( $redirect );
-			die();
-		}
-	} 
+	// 	if ( is_wp_error( $user_id ) ) {
+	// 		$add_user_errors = $user_id;
+	// 	} else {
+	// 		if ( current_user_can( 'list_users' ) ) {
+	// 			$redirect = 'users.php?update=add&id=' . $user_id;
+	// 		} else {
+	// 			$redirect = add_query_arg( 'update', 'add', 'user-new.php' );
+	// 		}
+	// 		echo 'redirect123';
+	// 		var_dump($redirect);
+	// 		wp_redirect( $redirect );
+	// 		die();
+	// 	}
+	// } 
 	
 	// else {
 	// 	// Adding a new user to this site.
