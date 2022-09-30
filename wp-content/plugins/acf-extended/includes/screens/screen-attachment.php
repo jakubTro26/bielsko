@@ -168,9 +168,9 @@ class acfe_screen_attachment{
                 // main form
                 var $main = $('#posts-filter');
 
-                $main.wrap('<div class="acf-columns-2" />');
+                $main.wrap('<div class="acf-columns-2 r1" />');
                 $main.prepend($('.subsubsub'));
-                $main.wrap('<div class="acf-column-1" />');
+                $main.wrap('<div class="acf-column-1 r1" />');
     
                 // field groups
                 var $column_1 = $('.acf-column-1');
@@ -191,8 +191,8 @@ class acfe_screen_attachment{
                     // media frame
                     var $main = $('.media-frame');
 
-                    $main.wrap('<div class="acf-columns-2" />');
-                    $main.wrap('<div class="acf-column-1" />');
+                    $main.wrap('<div class="acf-columns-2 r2" />');
+                    $main.wrap('<div class="acf-column-1 r2" />');
 
                     // field groups
                     var $column_1 = $('.acf-column-1');
