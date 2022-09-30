@@ -99,7 +99,8 @@ if ( empty( $_REQUEST ) ) {
 $update = '';
 
 echo 'current123';
-var_dump($wp_list_table->current_action());
+echo $wp_list_table->current_action();
+echo 'end';
 
 
 switch ( $wp_list_table->current_action() ) {
@@ -514,8 +515,7 @@ switch ( $wp_list_table->current_action() ) {
 			/** This action is documented in wp-admin/edit.php */
 			$sendback = apply_filters( "handle_bulk_actions-{$screen}", $sendback, $wp_list_table->current_action(), $userids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
 
-			echo 'sendback123';
-			var_dump($sendback);
+			
 
 
 			wp_safe_redirect( $sendback );
