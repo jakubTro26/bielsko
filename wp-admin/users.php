@@ -99,9 +99,13 @@ if ( empty( $_REQUEST ) ) {
 $update = '';
 
 echo 'current123';
-var_dump($wp_list_table->current_action());
 
-switch ( $wp_list_table->current_action() ) {
+
+$current = $wp_list_table->current_action();
+
+var_dump($current );
+
+switch ( $current  ) {
 
 	/* Bulk Dropdown menu Role changes */
 	case 'promote':
