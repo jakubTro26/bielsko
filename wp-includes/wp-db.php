@@ -2010,6 +2010,12 @@ class wpdb {
 			return false;
 		}
 
+
+			echo '<div>';
+			var_dump(debug_backtrace());
+			echo '</div>';
+
+
 		/**
 		 * Filters the database query.
 		 *
