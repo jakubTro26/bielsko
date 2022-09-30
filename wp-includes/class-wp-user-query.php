@@ -263,6 +263,7 @@ class WP_User_Query {
 		
         	echo '<div>';
 			var_dump(debug_backtrace());
+			var_dump($query);
 			echo '</div>';
 
 
