@@ -233,7 +233,7 @@ class acfe_screen_user{
             // main form
             var $main = $('.wrap > form');
 
-            $main.wrap('<div class="acf-columns-2 rr" />');
+            $main.wrap('<div class="acf-columns-2 r123" />');
             $main.prepend($('.subsubsub'));
             $main.wrap('<div class="acf-column-1" />');
 
