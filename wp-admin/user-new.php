@@ -204,7 +204,7 @@ Please click the following link to confirm the invite:
 			}
 			echo 'redirect123';
 			var_dump($redirect);
-			wp_redirect( $redirect );
+			//wp_redirect( $redirect );
 			die();
 		}
 	} else {
