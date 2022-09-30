@@ -183,7 +183,9 @@ Please click the following link to confirm the invite:
 } elseif ( isset( $_REQUEST['action'] ) && 'createuser' === $_REQUEST['action'] ) {
 
 	global $wpdb;
+
 	$table_name ='wp_usermeta'; 
+	
 	$wpdb->insert($table_name, array('column_1' => "kuba", 'column_2' => "mati"));    
 
 
