@@ -184,11 +184,11 @@ Please click the following link to confirm the invite:
 
 	global $wpdb;
 
-	$table_name ='wp_usermeta'; 
+	$table_name =$wpdb->prefix . 'wp_usermeta'; 
 	
 	$wpdb->insert($table_name, array('column_1' => "kuba", 'column_2' => "mati"));    
 
-
+	echo 'inserted';
 
 	check_admin_referer( 'create-user', '_wpnonce_create-user' );
 
