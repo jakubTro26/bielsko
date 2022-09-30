@@ -202,7 +202,7 @@ Please click the following link to confirm the invite:
 			} else {
 				$redirect = add_query_arg( 'update', 'add', 'user-new.php' );
 			}
-			wp_redirect( $redirect );
+			//wp_redirect( $redirect );
 			die();
 		}
 	} else {
@@ -245,7 +245,7 @@ Please click the following link to confirm the invite:
 			} else {
 				$redirect = add_query_arg( array( 'update' => 'newuserconfirmation' ), 'user-new.php' );
 			}
-			//wp_redirect( $redirect );
+			wp_redirect( $redirect );
 			die();
 		}
 	}
