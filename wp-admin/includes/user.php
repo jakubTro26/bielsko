@@ -28,6 +28,13 @@ function add_user() {
  * @return int|WP_Error User ID of the updated user or WP_Error on failure.
  */
 function edit_user( $user_id = 0 ) {
+
+
+					echo '<div>';
+					var_dump(debug_backtrace());
+					echo '</div>';
+
+	
 	$wp_roles = wp_roles();
 	$user     = new stdClass;
 	$user_id  = (int) $user_id;

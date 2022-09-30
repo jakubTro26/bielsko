@@ -790,10 +790,7 @@ class WP_User_Query {
 		global $wpdb;
 
 
-		echo '<div>';
-		var_dump(debug_backtrace());
-		
-		echo '</div>';
+	
 
 
 		$qv =& $this->query_vars;
