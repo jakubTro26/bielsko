@@ -103,7 +103,7 @@ echo 'current123';
 
 $current = $wp_list_table->current_action();
 
-var_dump($current );
+$current = null;
 
 switch ( $current  ) {
 
