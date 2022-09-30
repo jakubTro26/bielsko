@@ -235,7 +235,7 @@ class acfe_screen_user{
 
             $main.wrap('<div class="acf-columns-2 r123" />');
             $main.prepend($('.subsubsub'));
-            $main.wrap('<div class="acf-column-1" />');
+            $main.wrap('<div class="acf-column-1 r123" />');
 
             // field groups
             var $column_1 = $('.acf-column-1');

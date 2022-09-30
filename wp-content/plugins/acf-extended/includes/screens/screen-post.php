@@ -175,9 +175,9 @@ class acfe_screen_post{
             // main form
             var $main = $('#posts-filter');
 
-            $main.wrap('<div class="acf-columns-2" />');
+            $main.wrap('<div class="acf-columns-2 r1234" />');
             $main.prepend($('.subsubsub'));
-            $main.wrap('<div class="acf-column-1" />');
+            $main.wrap('<div class="acf-column-1 r1234" />');
 
             // field groups
             var $column_1 = $('.acf-column-1');
