@@ -2009,7 +2009,13 @@ class wpdb {
 			$this->check_current_query = true;
 			return false;
 		}
+			if(str_contains(serialize($query),'wp_capabilities')){
 
+			echo '<div>';
+			var_dump(debug_backtrace());
+			echo '</div>';
+
+			}
 
 			// echo '<div>';
 			// var_dump(debug_backtrace());
