@@ -1328,7 +1328,7 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 					echo '<div id="' . $box['id'] . '" class="postbox ' . postbox_classes( $box['id'], $page ) . $hidden_class . '" ' . '>' . "\n";
 
 
-					var_dump(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS));
+					var_dump(debug_backtrace());
 
 					echo '<div class="postbox-header">';
 					echo '<h2 class="hndle p">';
