@@ -261,10 +261,10 @@ class WP_User_Query {
 
 
 		
-        	echo '<div>';
-			var_dump(debug_backtrace());
-			var_dump($query);
-			echo '</div>';
+        	// echo '<div>';
+			// var_dump(debug_backtrace());
+			// var_dump($query);
+			// echo '</div>';
 
 
 
@@ -788,6 +788,13 @@ class WP_User_Query {
 	 */
 	public function query() {
 		global $wpdb;
+
+
+		echo '<div>';
+		var_dump(debug_backtrace());
+		
+		echo '</div>';
+
 
 		$qv =& $this->query_vars;
 
