@@ -110,7 +110,15 @@ class acfe_enhanced_ui{
         <div id="major-publishing-actions">
             <div id="publishing-action"></div>
             
-            <?php do_action("acfe/{$screen}/submitbox_major_actions", $object); ?>
+            <?php 
+            echo 'screen123';
+            var_dump($screen);
+            
+            do_action("acfe/{$screen}/submitbox_major_actions", $object);
+            
+            
+            
+            ?>
             
             <div class="clear"></div>
         </div>
