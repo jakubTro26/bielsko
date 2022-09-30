@@ -99,8 +99,7 @@ if ( empty( $_REQUEST ) ) {
 $update = '';
 
 echo 'current123';
-echo $wp_list_table->current_action();
-echo 'end';
+var_dump($wp_list_table->current_action());
 
 
 switch ( $wp_list_table->current_action() ) {
