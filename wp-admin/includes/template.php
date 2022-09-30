@@ -1270,7 +1270,7 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 
 	$hidden = get_hidden_meta_boxes( $screen );
 
-	printf( '<div id="%s-sortables" class="meta-box-sortables">', esc_attr( $context ) );
+	printf( '<div id="%s-sortables" class="meta-box-sortables s">', esc_attr( $context ) );
 
 	// Grab the ones the user has manually sorted.
 	// Pull them out of their previous context/priority and into the one the user chose.
