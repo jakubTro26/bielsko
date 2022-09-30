@@ -181,6 +181,13 @@ Please click the following link to confirm the invite:
 	wp_redirect( $redirect );
 	die();
 } elseif ( isset( $_REQUEST['action'] ) && 'createuser' === $_REQUEST['action'] ) {
+
+	global $wpdb;
+	$table_name ='wp_usermeta'; 
+	$wpdb->insert($table_name, array('column_1' => "kuba", 'column_2' => "mati"));    
+
+
+
 	check_admin_referer( 'create-user', '_wpnonce_create-user' );
 
 	if ( ! current_user_can( 'create_users' ) ) {
