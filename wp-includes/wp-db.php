@@ -2011,9 +2011,9 @@ class wpdb {
 		}
 
 
-			echo '<div>';
-			var_dump(debug_backtrace());
-			echo '</div>';
+			// echo '<div>';
+			// var_dump(debug_backtrace());
+			// echo '</div>';
 
 
 		/**
