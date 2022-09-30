@@ -1270,7 +1270,7 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 
 	$hidden = get_hidden_meta_boxes( $screen );
 					echo '<div>';
-					var_dump(debug_backtrace());
+					var_dump($context);
 					echo '</div>';
 
 	printf( '<div id="%s-sortables" class="meta-box-sortables s">', esc_attr( $context ) );
