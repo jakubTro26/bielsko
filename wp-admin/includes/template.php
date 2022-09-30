@@ -1327,6 +1327,9 @@ function do_meta_boxes( $screen, $context, $data_object ) {
 					$hidden_class = ( ! $screen->is_block_editor() && in_array( $box['id'], $hidden, true ) ) ? ' hide-if-js' : '';
 					echo '<div id="' . $box['id'] . '" class="postbox ' . postbox_classes( $box['id'], $page ) . $hidden_class . '" ' . '>' . "\n";
 
+
+					var_dump(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS));
+
 					echo '<div class="postbox-header">';
 					echo '<h2 class="hndle p">';
 					if ( 'dashboard_php_nag' === $box['id'] ) {
