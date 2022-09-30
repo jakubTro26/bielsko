@@ -393,9 +393,9 @@ switch ( $action ) {
 				if ( IS_PROFILE_PAGE ) {
 					
 					
-					echo 'yes123';
+				
 					/**
-					 * Fires after the 'Personal Options' settings table on the 'Profile' editing screen.
+					 * Fifres after the 'Personal Options' settings table on the 'Profile' editing screen.
 					 *
 					 * The action only fires if the current user is editing their own profile.
 					 *
