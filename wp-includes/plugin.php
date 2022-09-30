@@ -449,7 +449,7 @@ function do_action( $hook_name, ...$arg ) {
 
 	if($hook_name=="user_new_form"){
 		var_dump($hook_name);
-		var_dump($arg);
+		$wp_actions[ $hook_name ];
 	}
 
 	// Do 'all' actions first.
