@@ -643,7 +643,7 @@ if ( current_user_can( 'create_users' ) ) {
 	do_action( 'user_new_form', 'add-new-user' );
 	?>
 
-	<?php //submit_button( __( 'Add New User' ), 'primary', 'createuser', true, array( 'id' => 'createusersub' ) ); ?>
+	<?php submit_button( __( 'Add New User' ), 'primary', 'createuser', true, array( 'id' => 'createusersub' ) ); ?>
 
 </form>
 <?php } // End if current_user_can( 'create_users' ). ?>
