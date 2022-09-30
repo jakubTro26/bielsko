@@ -202,9 +202,9 @@ Please click the following link to confirm the invite:
 			} else {
 				$redirect = add_query_arg( 'update', 'add', 'user-new.php' );
 			}
-			echo 'redirect123';
-			var_dump($redirect);
-			//wp_redirect( $redirect );
+			// echo 'redirect123';
+			// var_dump($redirect);
+			wp_redirect( $redirect );
 			die();
 		}
 	} 
