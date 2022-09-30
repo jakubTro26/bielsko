@@ -187,6 +187,9 @@ switch ( $action ) {
 	default:
 		$profile_user = get_user_to_edit( $user_id );
 
+
+	
+
 		if ( ! current_user_can( 'edit_user', $user_id ) ) {
 			wp_die( __( 'Sorry, you are not allowed to edit this user.' ) );
 		}

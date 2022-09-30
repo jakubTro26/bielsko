@@ -104,6 +104,10 @@ if ( ! function_exists( 'get_user_by' ) ) :
 
 		$userdata = WP_User::get_data_by( $field, $value );
 
+		echo 'data123';
+		var_dump($userdata);
+
+
 		if ( ! $userdata ) {
 			return false;
 		}
