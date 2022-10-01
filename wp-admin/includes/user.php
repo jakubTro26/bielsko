@@ -29,6 +29,10 @@ function add_user() {
  */
 function edit_user( $user_id = 0 ) {
 
+
+
+	var_dump($_REQUEST);
+
 					// echo 'adding123';
 					// echo '<div>';
 					// var_dump(debug_backtrace());
