@@ -55,6 +55,7 @@ function edit_user( $user_id = 0 ) {
 	$pass2 = '';
 	if ( isset( $_POST['pass1'] ) ) {
 		$pass1 = trim( $_POST['pass1'] );
+		var_dump($pass1);
 	}
 	if ( isset( $_POST['pass2'] ) ) {
 		$pass2 = trim( $_POST['pass2'] );
