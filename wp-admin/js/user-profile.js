@@ -17,6 +17,10 @@
 		currentPass,
 		$passwordWrapper;
 
+
+	console.log('kuba');
+
+
 	function generatePassword() {
 		if ( typeof zxcvbn !== 'function' ) {
 			setTimeout( generatePassword, 50 );
