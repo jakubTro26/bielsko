@@ -109,7 +109,7 @@ class URE_User_Other_Roles {
         if ( defined('WP_DEBUG') && !empty( WP_DEBUG ) ) {
             $ms_file_name = 'multiple-select.js';
         } else {
-            $ms_file_name = 'multiple-select.min.js';
+            $ms_file_name = 'multiple-select.js';
         }
         
         $select_primary_role = apply_filters('ure_users_select_primary_role', true);
