@@ -18,7 +18,7 @@
 		$passwordWrapper;
 
 
-	console.log('kuba');
+
 
 
 	function generatePassword() {
